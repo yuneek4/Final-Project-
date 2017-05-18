@@ -1,6 +1,6 @@
 
 
-const int temperaturePin = 0;
+const int temperaturePin = A0;
 const int GreenP2 = 6;
 const int YellowP3 = 5; 
 const int TransP4 = 4;
@@ -41,26 +41,26 @@ void loop()
 
 delay(1000); 
 
-if (degreesF < 65) 
+if (degreesF < 65;) 
 {
   digitalWrite(TransP4,HIGH); 
   digitalWrite(YellowP3,HIGH);
 }
 
-else if (degreesF == 75) 
+else if (degreesF > 65;) && (degreesF < 70;) 
 {
   digitalWrite(TransP4,LOW);
   digitalWrite(YellowP3,LOW);
   digitalWrite(GreenP2,HIGH);
 }
 
-else if (degreesF > 75)
+else if (degreesF > 71;) && (degreesF < 75;)
 {
   digitalWrite(GreenP2,LOW);
   digitalWrite(BlueP5,HIGH);
 }
 
-else if (degreesF < 85)
+else if (degreesF > 76)
 {
   digitalWrite(BlueP5,LOW);
   digitalWrite(RedP6, HIGH);
